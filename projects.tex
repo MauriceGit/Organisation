@@ -1,0 +1,472 @@
+% das Papierformat zuerst
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage{fancyvrb}
+
+\usepackage[left=35mm,right=35mm,top=25mm,bottom=25mm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[english]{babel}
+
+\usepackage[hidelinks]{hyperref}
+
+% für bilder
+\usepackage{graphicx}
+% für floats (figures und so)
+\usepackage{float}
+
+% dfrac nutzen können
+\usepackage{amsmath}
+% um mathbb nutzen zu können
+\usepackage{amssymb}
+
+% Für Block-Kommentare
+\usepackage{comment}
+
+% Ob Kommentare angezeigt werden sollen oder nicht
+%\includecomment{comment}
+\excludecomment{comment}
+
+% für Umrandungen
+\usepackage{framed}
+
+% Für Fußnoten in Tabellen
+\usepackage{tablefootnote}
+
+% Für vernünftige interne Verweise
+\usepackage{titleref}
+
+% Damit das Einbinden von UML-Diagrammen von Natur aus funktioniert.
+\DeclareGraphicsRule{.1}{mps}{*}{}
+
+% Setzt die Tiefe von Sections...
+\setcounter{secnumdepth}{4}
+
+% Setzt die Tiefe des Inhaltsverzeichnisses
+\setcounter{tocdepth}{4}
+
+% Damit Bilder und Text nebeneinander sein können
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+
+
+\hyphenation{trans-parancy}
+\hyphenation{Autodesk}
+\hyphenation{descent}
+\hyphenation{computer-graphics}
+
+% hier beginnt das Dokument
+\begin{document}
+	
+\thispagestyle{empty}
+
+% =======================================================================
+% Titelseite
+
+
+% nicht zu parsende Zeichen
+\begin{verbatim}
+
+
+
+
+
+\end{verbatim}
+
+\begin{center}
+\textbf{\LARGE{Software Projects}}
+\end{center}
+
+% nicht zu parsende Zeichen
+\begin{verbatim}
+
+
+\end{verbatim}
+
+\begin{center}
+\textbf{\large{Listing and description of software projects I created in context of my studies and in my private time}}
+\end{center}
+
+% nicht zu parsende Zeichen
+\begin{verbatim}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{verbatim}
+
+\begin{flushleft}
+\begin{tabular}{llll}
+
+\textbf{Subject:}
+& & & Software projects
+\\
+\\
+\textbf{Author:}
+& & & Maurice Tollmien -- maurice.tollmien@gmail.com
+\\
+\\
+\textbf{Last modification:}
+& & & \today
+
+
+
+\end{tabular}
+\end{flushleft}
+
+
+\newpage
+
+% =======================================================================
+% Inhaltsverzeichnis
+
+\tableofcontents
+\newpage
+
+% -----------------------------------------------------------------------
+% Introduction
+
+\section{Introduction}
+
+In context of job applications and interviews, it is not always clear, what skills and capabilities the candidate (in this case - me)
+has and where the main technical competence lies. 
+\newline
+During the last years, it became apparent, that a simple listing of relevant projects with short desciptions often circumvents and avoids such uncertainties.
+\newline
+\newline
+With those projects, often linked with the correspondent repositories, I hope to create an impression of my strengths and 
+capabilities.
+\newline
+\newline
+Most of my more relevant and meaningful projects are uploaded or developed using the following GitHub repository:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/}
+\end{center}$\\$
+The list of exercises and projects is not complete and rather serves to create a valid impression of the technical side of myself.
+Mostly the listed projects were created in context of my studies of computer science (Bachelor and Master).
+Several others I build in my private time.
+
+\newpage
+
+\section{Computer Graphics and Virtual Reality}
+
+\subsection{Basic Computer Graphics Projects}
+
+2/3D programs in C, using the OpenGL interface and pipeline. Specific projects vary from different lighting computations
+in 3D, shadow volumes and transparancy to higher order spline interpolation.
+\\
+Later projects include physically approximated calculations for sphere movement on spline surfaces, collision 
+detection and particle simulations to give some examples.
+\\
+Most later implementations make extended use of the OpenGL shader language GLSL for vertex, fragment and
+compute shaders.
+
+\subsection{Virtual Reality Project}
+
+The main goal of this project was to implement software to make a head mounted display compatible to Linux.
+This included reverse engineering the USB bitstream and interpret it as Quaternions for further use in arbitrary 
+software. The final state of this program was a C library which could be used in any program using the OpenGL
+pipeline to create a real 3D experience using the head mounted display.
+
+\subsection{Procedural Modelling}
+
+Creation of a 3D model (from scratch) of a self picked item by use of the Autodesk Softimage software.
+The resulting object file could then be included into further projects.
+\\
+\\
+This project (including screenshots) is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Procedural_Modeling_Spyder}
+\end{center}
+
+\subsection{Cloth Simulation}
+
+This project was created entirely in my private time. It implements basic cloth simulation using a particle 
+based approach with virtual springs for structure. The cloth interacts with different objects like spheres,
+quads, planes, as well as virtual wind. 
+\\
+This project (including screenshots and further descriptions) is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Cloth_Simulation}
+\end{center}
+
+\newpage
+
+\subsection{Water Simulation with  Reflections/Refractions}\label{subsec:water}
+
+Implementation of a pressure based water simulation, internally represented as a height field.
+The surroundings are procedurally generated using a self implemented Perlin noise.
+\\
+The reflections and refractions are entirely computed in screen space, using the OpenGL fragment
+shader.
+\\
+\\
+This project (including screenshots and further descriptions) is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Water_Simulation}
+\end{center}
+
+\subsection{Particle Simulation on GPU}
+
+Implementation of a particle simulation (Euler integration) by using the OpenGL compute shader.
+All computations, regarding the particles, are done by the GPU entirely. Leading to impressive 
+speed and particle count.
+\\
+\\
+Further information and source code is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Partikel_accelleration_on_GPU}
+\end{center}
+
+\subsection{Screen Space Ambient Occlusion (SSAO)}
+
+A private project, implementing a version of screen space ambient occlusion. Adjustments to the ambient 
+occlusion are possible while running the sample. The complete implementation of SSAO is done using the
+OpenGL fragment shader.
+\\
+\\
+Further information and source code is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Screen_Space_Ambient_Occlusion}
+\end{center}
+
+\subsection{Environment Mapping}
+
+As extension to the practical water simulation project (see \ref{subsec:water} \glqq\nameref{subsec:water}\grqq), I
+presented a seminar on how environment mapping could be implemented and realized in virtual environments.
+Mostly featuring screen space reflections and parallax corrected cubemaps.
+
+\subsection{Delaunay and Voronoi Partition of Images}
+
+As a private project, I implemented a software which takes an image, extracts points according to the local
+image contrast and triangulates them with a Delaunay triangulation (implemented completely from scratch).
+The triangulation is then converted to voronoi regions. The output are images with the delaunay/voronoi
+regions colored in the mean color of the particular region.
+\\
+\\
+Further information and source code is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Delaunay_Triangulation}
+\end{center}
+
+\section{Artificial Intelligence}
+
+\subsection{Game AI (Bachelor Thesis)}\label{subsec:thesis}
+
+In the course of my Bachelor thesis, I created a dissertation in a subdiscipline of artificial intelligence 
+with a complex board game (Arimaa\footnote{\url{http://arimaa.com/arimaa/}}) as subject.
+Next to the theoretical approach, I implemented most of the relevant algorithms such as alpha-beta pruning, 
+transposition tables, Zobrist hashing, move ordering and parallelization.
+\\
+The dissertation won an award for innovation (Wedeler Hochschulpreis).
+\\
+\\
+The dissertation is published on the official Arimaa homepage: 
+
+\begin{center}
+	\url{http://arimaa.com/arimaa/papers/MauriceTollmien/Thesis.pdf}
+\end{center}$\\$
+The source code of the AI is uploaded and available on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Bachelor-Thesis-Arimaa}
+\end{center}
+
+\subsection{Pure Logical Agent}
+
+Design and implementation of a pure logical agent for the game of Wumpus World, which dynamically acts according
+to the game situation. The resulting logical expression is then solved, using a SAT solver 
+(Picosat\footnote{\url{https://hackage.haskell.org/package/picosat}}).
+\\
+The implementation is functional and written in Haskell. The project is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/AI-Logical-Agent}
+\end{center}
+
+\subsection{Artificial Neural Network}
+
+This project was created for university and proceeded in my private time. It contains a from-scratch implementation
+of a backpropagation neural network for letter recognition. Several extensions are implemented, like 
+gradient descent and dynamic hidden layer count and size.
+\\
+In the end it turns out to be on the same level of effectiveness and efficiency as common backpropagation neural networks
+like PyBrain\footnote{\url{http://pybrain.org/}}.
+\\
+\\
+The implementation as well as a presentation are uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Artificial_Neural_Network_Character_Classification}
+\end{center}
+
+\section{IT Security}
+
+\subsection{Seminar Paper on Compiler Backdoors}
+
+Preparing and presenting a seminar paper on backdoors in software implementation, especially in 
+a compiler itself.
+\\
+The seminar paper is written in english and published on the website of the university:
+
+\begin{center}
+	\url{http://www.fh-wedel.de/~gb/seminare/ws2012/tollmien_backdoors.pdf}
+\end{center}
+
+\subsection{Security Engineering Project}
+
+Implementation of a small program in C and cracking/decompiling the implementation of a fellow student with use
+of common tools like hexdump, gdb and objdump.
+
+\subsection{Cryptography Project}
+
+Extended workshop on cryptographic methods and algorithms. The workshop covered the practical approach as well as
+the mathematical background of common cryptographic encryption, hashing and signature algorithms.
+\\
+Included subjects in this workshop were for example: DES, GOST, AES, message integrity/authenticity, random number
+generators, number theory, asynchrone techniques like Diffie-Hellman, RSA, elliptic curve cryptography and one way
+accumulators.
+\\
+\\
+Every task and correspondent solution is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Cryptography_Workshop}
+\end{center}
+
+\subsection{Secure File Encryption}
+
+As a private project I implemented an interactive secure file encryption in Python. It alows encryption/decryption, read mode and write mode (using Linux \glq less\grq\  and \glq nano\grq\ tools). The encryption consists of hashing the password and AES.
+\\
+\\
+The complete implementation can be viewed under the following link:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Secure_File_Encryption}
+\end{center}
+
+\newpage
+
+\subsection{Mental Poker}
+
+In this project a group of students (me included) extended the official Bouncy Castle\footnote{\url{https://www.bouncycastle.org/}} Crypto library with the SRA Algorithm which can be used
+for mental poker. The main difference to the common RSA algorithm is its commutative behaviour regarding 
+the encryption and decryption.
+\\
+\\
+The SRA implementation is published under the following link:
+
+\begin{center}
+	\url{https://github.com/mervyn-mccreight/mentalpoker}
+\end{center}
+
+\section{Programming Contests}
+
+\subsection{Shortest path - 2013}
+
+I took part in a programming contest with the goal, to find the shortest path through a set of points.
+I used a mesh triangulation (Delaunay) from computer graphics and was able to reach the 3rd rank
+overall.
+
+\subsection{2048 AI - 2014}
+
+I participated in a programming contest with the main goal to implement a fast and efficient AI for the game
+2048\footnote{\url{https://gabrielecirulli.github.io/2048/}}. I reused most of my AI algorithms from my bachelor 
+thesis (see \ref{subsec:thesis} \glqq\nameref{subsec:thesis}\grqq) and was able to reach the 2nd rank overall.
+\\
+\\
+The complete source code is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/2048_Game_AI}
+\end{center}
+
+\subsection{SameGame AI - 2015}
+
+I participated in the programming contest for implementing an efficient AI for the game
+SameGame\footnote{\url{https://de.wikipedia.org/wiki/SameGame}}. My implementation used a Monte-Carlo tree 
+search. I was able to reach the 3rd rank overall.
+\\
+\\
+The complete source code is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Programming_Contest_2015}
+\end{center}
+
+\newpage
+
+\subsection{Organization of the Programming Contest 2016}
+
+This year's programming contest will be organized by a fellow student and myself. The problem definition is not yet
+public and we are right now working on the server and middleware structure for bot testing and visualization.
+\\
+The topic will be about writing an AI for an Agar\footnote{\url{http://agar.io/}}-like environment.
+\\
+The software is still under construction but runnable and can be viewed with the following links.
+\\
+Server (Handles middlewares and complete game logic):
+\begin{center}
+	\url{https://github.com/hpatjens/Programmierwettbewerb-Server}
+\end{center}$\\$
+Middleware (Manage bot in/output and connects to server):
+\begin{center}
+	\url{https://github.com/hpatjens/Programmierwettbewerb-Middleware}
+\end{center}$\\$
+Gui (Connects to server and visualizes the game with all connected bots)
+\begin{center}
+	\url{https://github.com/hpatjens/Programmierwettbewerb-Gui}
+\end{center}
+
+\section{Other Projects}
+
+\subsection{Android App}
+
+In cooperation with the wildlife park Eekholt\footnote{\url{http://www.wildpark-eekholt.de/}} we developed an Android 
+App as a navigation help for visitors. 
+
+\subsection{Lua Compiler}
+
+As part of a team of several students, we developed a Lua interpreter from scratch in Java. My part was mostly the 
+code generation (Generate assembly like code from an abstract syntax tree) but was involved in decision making
+of the runtime environment and parser/scanner development as well. 
+
+\subsection{Distributed Systems in Erlang}
+ 
+Partly for university, partly as a private project, I developed a few algorithms for distributed systems (like 
+bully algorithm, time control, mail delivery, ...) in Erlang.
+\\
+\\
+The implementation of the bully algorihm is uploaded on my GitHub account:
+\begin{center}
+	\url{https://github.com/MauriceGit/Distributed_Systems_Bully_Algorithm}
+\end{center}
+
+ 
+
+
+
+
+
+
+\end{document}
+
