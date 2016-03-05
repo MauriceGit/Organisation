@@ -58,6 +58,9 @@
 \hyphenation{Autodesk}
 \hyphenation{descent}
 \hyphenation{computer-graphics}
+\hyphenation{Autodesk}
+\hyphenation{Softimage}
+\hyphenation{different}
 
 % hier beginnt das Dokument
 \begin{document}
@@ -88,7 +91,7 @@
 \end{verbatim}
 
 \begin{center}
-\textbf{\large{Listing and description of software projects I created in context of my studies and in my private time}}
+\textbf{\large{List and description of software projects I created in context of my studies and in my private time}}
 \end{center}
 
 % nicht zu parsende Zeichen
@@ -143,20 +146,24 @@
 In context of job applications and interviews, it is not always clear, what skills and capabilities the candidate (in this case - me)
 has and where the main technical competence lies. 
 \newline
-During the last years, it became apparent, that a simple listing of relevant projects with short desciptions often circumvents and avoids such uncertainties.
+During the last years, it became apparent, that a simple list of relevant projects with short desciptions often circumvents and avoids such uncertainties.
 \newline
 \newline
 With those projects, often linked with the correspondent repositories, I hope to create an impression of my strengths and 
 capabilities.
 \newline
 \newline
-Most of my more relevant and meaningful projects are uploaded or developed using the following GitHub repository:
+Most of my more meaningful projects are uploaded or developed using the following GitHub repository:
 
 \begin{center}
 	\url{https://github.com/MauriceGit/}
 \end{center}$\\$
+All projects I designed, planned and implemented myself are explicitly published as Open Source for 
+unrestricted further use.
+\newline
+\newline
 The list of exercises and projects is not complete and rather serves to create a valid impression of the technical side of myself.
-Mostly the listed projects were created in context of my studies of computer science (Bachelor and Master).
+The majority of the listed projects were created in context of my studies (Computer Science - Bachelor and Master).
 Several others I build in my private time.
 
 \newpage
@@ -165,26 +172,26 @@ Several others I build in my private time.
 
 \subsection{Basic Computer Graphics Projects}
 
-2/3D programs in C, using the OpenGL interface and pipeline. Specific projects vary from different lighting computations
-in 3D, shadow volumes and transparancy to higher order spline interpolation.
+2/3D programs in C, using the OpenGL interface and pipeline. Specific projects vary from different Lighting Computations
+in 3D, Shadow Volumes and Transparancy to higher order Spline Interpolation.
 \\
-Later projects include physically approximated calculations for sphere movement on spline surfaces, collision 
+Later projects include physically correct approximated calculations for sphere movement on spline surfaces, collision 
 detection and particle simulations to give some examples.
 \\
-Most later implementations make extended use of the OpenGL shader language GLSL for vertex, fragment and
-compute shaders.
+Most later implementations make extended use of the OpenGL shader language GLSL for Vertex, Fragment and
+Compute Shaders.
 
 \subsection{Virtual Reality Project}
 
-The main goal of this project was to implement software to make a head mounted display compatible to Linux.
-This included reverse engineering the USB bitstream and interpret it as Quaternions for further use in arbitrary 
-software. The final state of this program was a C library which could be used in any program using the OpenGL
-pipeline to create a real 3D experience using the head mounted display.
+The main goal of this project was to implement software to make a Head Mounted Display (HMD) compatible to Linux.
+This included reverse engineering of the USB bitstream and interpret it as Quaternions for further use in arbitrary 
+software. The final state of this project was a C library which could be used in any C program using the OpenGL
+pipeline to create a real 3D experience using the HMD.
 
 \subsection{Procedural Modelling}
 
-Creation of a 3D model (from scratch) of a self picked item by use of the Autodesk Softimage software.
-The resulting object file could then be included into further projects.
+Creation of a 3D model (from scratch) of a random item with Autodesk Softimage.
+The resulting object file could then be used by different projects.
 \\
 \\
 This project (including screenshots) is uploaded on my GitHub account:
@@ -199,7 +206,7 @@ This project was created entirely in my private time. It implements basic cloth 
 based approach with virtual springs for structure. The cloth interacts with different objects like spheres,
 quads, planes, as well as virtual wind. 
 \\
-This project (including screenshots and further descriptions) is uploaded on my GitHub account:
+This project (including screenshots and further information) is uploaded on my GitHub account:
 
 \begin{center}
 	\url{https://github.com/MauriceGit/Cloth_Simulation}
@@ -210,13 +217,13 @@ This project (including screenshots and further descriptions) is uploaded on my 
 \subsection{Water Simulation with  Reflections/Refractions}\label{subsec:water}
 
 Implementation of a pressure based water simulation, internally represented as a height field.
-The surroundings are procedurally generated using a self implemented Perlin noise.
+The surroundings are procedurally generated using a self implemented Perlin Noise.
 \\
 The reflections and refractions are entirely computed in screen space, using the OpenGL fragment
 shader.
 \\
 \\
-This project (including screenshots and further descriptions) is uploaded on my GitHub account:
+This project (including screenshots and further information) is uploaded on my GitHub account:
 
 \begin{center}
 	\url{https://github.com/MauriceGit/Water_Simulation}
@@ -224,7 +231,7 @@ This project (including screenshots and further descriptions) is uploaded on my 
 
 \subsection{Particle Simulation on GPU}
 
-Implementation of a particle simulation (Euler integration) by using the OpenGL compute shader.
+Implementation of a particle simulation (Euler Integration) by using the OpenGL compute shader.
 All computations, regarding the particles, are done by the GPU entirely. Leading to impressive 
 speed and particle count.
 \\
@@ -237,8 +244,8 @@ Further information and source code is uploaded on my GitHub account:
 
 \subsection{Screen Space Ambient Occlusion (SSAO)}
 
-A private project, implementing a version of screen space ambient occlusion. Adjustments to the ambient 
-occlusion are possible while running the sample. The complete implementation of SSAO is done using the
+A private project, implementing a version of Screen Space Ambient Occlusion (SSAO). Adjustments to the Ambient 
+Occlusion are possible while running the sample. The implementation of SSAO is done using the
 OpenGL fragment shader.
 \\
 \\
@@ -250,15 +257,15 @@ Further information and source code is uploaded on my GitHub account:
 
 \subsection{Environment Mapping}
 
-As extension to the practical water simulation project (see \ref{subsec:water} \glqq\nameref{subsec:water}\grqq), I
+As extension to the implemented water simulation project (see \ref{subsec:water} \glqq\nameref{subsec:water}\grqq), I
 presented a seminar on how environment mapping could be implemented and realized in virtual environments.
 Mostly featuring screen space reflections and parallax corrected cubemaps.
 
 \subsection{Delaunay and Voronoi Partition of Images}
 
-As a private project, I implemented a software which takes an image, extracts points according to the local
+As a private project, I implemented a software, which takes an image, extracts points according to the local
 image contrast and triangulates them with a Delaunay triangulation (implemented completely from scratch).
-The triangulation is then converted to voronoi regions. The output are images with the delaunay/voronoi
+The triangulation is then converted to Voronoi regions. The output are images with the Delaunay/Voronoi
 regions colored in the mean color of the particular region.
 \\
 \\
@@ -272,10 +279,10 @@ Further information and source code is uploaded on my GitHub account:
 
 \subsection{Game AI (Bachelor Thesis)}\label{subsec:thesis}
 
-In the course of my Bachelor thesis, I created a dissertation in a subdiscipline of artificial intelligence 
+In the course of my Bachelor thesis, I created a dissertation in a subdiscipline of artificial intelligence (AI) 
 with a complex board game (Arimaa\footnote{\url{http://arimaa.com/arimaa/}}) as subject.
-Next to the theoretical approach, I implemented most of the relevant algorithms such as alpha-beta pruning, 
-transposition tables, Zobrist hashing, move ordering and parallelization.
+Next to the theoretical approach, I implemented most of the relevant algorithms such as Alpha-Beta Pruning, 
+Transposition Tables, Zobrist Hashing, Move Ordering and Parallelization.
 \\
 The dissertation won an award for innovation (Wedeler Hochschulpreis).
 \\
@@ -293,7 +300,7 @@ The source code of the AI is uploaded and available on my GitHub account:
 
 \subsection{Pure Logical Agent}
 
-Design and implementation of a pure logical agent for the game of Wumpus World, which dynamically acts according
+Design and implementation of a purely logical agent for the game of Wumpus World\footnote{\url{https://en.wikipedia.org/wiki/Hunt_the_Wumpus}}, which dynamically acts according
 to the game situation. The resulting logical expression is then solved, using a SAT solver 
 (Picosat\footnote{\url{https://hackage.haskell.org/package/picosat}}).
 \\
@@ -306,8 +313,8 @@ The implementation is functional and written in Haskell. The project is uploaded
 \subsection{Artificial Neural Network}
 
 This project was created for university and proceeded in my private time. It contains a from-scratch implementation
-of a backpropagation neural network for letter recognition. Several extensions are implemented, like 
-gradient descent and dynamic hidden layer count and size.
+of a backpropagation neural network for letter recognition. Several extensions like 
+gradient descent and dynamic hidden layer count and size are implemented.
 \\
 In the end it turns out to be on the same level of effectiveness and efficiency as common backpropagation neural networks
 like PyBrain\footnote{\url{http://pybrain.org/}}.
@@ -368,7 +375,7 @@ The complete implementation can be viewed under the following link:
 
 \subsection{Mental Poker}
 
-In this project a group of students (me included) extended the official Bouncy Castle\footnote{\url{https://www.bouncycastle.org/}} Crypto library with the SRA Algorithm which can be used
+In this project a group of students (myself included) extended the official Bouncy Castle\footnote{\url{https://www.bouncycastle.org/}} Crypto library with the SRA Algorithm which can be used
 for mental poker. The main difference to the common RSA algorithm is its commutative behaviour regarding 
 the encryption and decryption.
 \\
@@ -384,7 +391,7 @@ The SRA implementation is published under the following link:
 \subsection{Shortest path - 2013}
 
 I took part in a programming contest with the goal, to find the shortest path through a set of points.
-I used a mesh triangulation (Delaunay) from computer graphics and was able to reach the 3rd rank
+I used a mesh triangulation (Delaunay) from Computer Graphics and was able to reach the 3rd rank
 overall.
 
 \subsection{2048 AI - 2014}
@@ -418,7 +425,7 @@ The complete source code is uploaded on my GitHub account:
 \subsection{Organization of the Programming Contest 2016}
 
 This year's programming contest will be organized by a fellow student and myself. The problem definition is not yet
-public and we are right now working on the server and middleware structure for bot testing and visualization.
+public and we are right now working on the server and middleware structure for bot testing and visualisation.
 \\
 The topic will be about writing an AI for an Agar\footnote{\url{http://agar.io/}}-like environment.
 \\
@@ -446,8 +453,8 @@ App as a navigation help for visitors.
 
 \subsection{Lua Compiler}
 
-As part of a team of several students, we developed a Lua interpreter from scratch in Java. My part was mostly the 
-code generation (Generate assembly like code from an abstract syntax tree) but was involved in decision making
+As part of a team of several students, we developed a Lua Interpreter from scratch in Java. My part was mostly the 
+code generation (Generate assembly like code from an abstract syntax tree) but I was involved in decision making
 of the runtime environment and parser/scanner development as well. 
 
 \subsection{Distributed Systems in Erlang}
