@@ -18,3 +18,6 @@ unrestricted further use.
 The list of exercises and projects is not complete and rather serves to create a valid impression of the technical side of myself.
 The majority of the listed projects were created in context of my studies (Computer Science - Bachelor and Master).
 Several others I build in my private time.
+
+
+https://github.com/MauriceGit/Organisation/blob/master/projects.pdf
