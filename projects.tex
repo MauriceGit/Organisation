@@ -328,7 +328,7 @@ This project was created for university and proceeded in my private time. It con
 of a backpropagation neural network for letter recognition. Several extensions like 
 gradient descent and dynamic hidden layer count and size are implemented.
 \\
-In the end it turns out to be on the same level of effectiveness and efficiency as common backpropagation neural networks
+In the end it turns out to be roughly on the same level of effectiveness and efficiency as common backpropagation neural networks
 like PyBrain\footnote{\url{http://pybrain.org/}}.
 \\
 \\
@@ -434,29 +434,55 @@ The complete source code is uploaded on my GitHub account:
 \end{center}
 
 
-\subsection{Organization of the Programming Contest 2016}
+\subsection{2D Bin Packing}
 
-This year's programming contest will be organized by a fellow student and myself. The problem definition is not yet
-public and we are right now working on the server and middleware structure for bot testing and visualisation.
+For this year's programming contest, I implemented a paper\footnote{\glqq A two-level search algorithm for 2D rectangular	packing problem\grqq \ by Mao Chen and Wenqi Huang} on optimal 2D bin packing.
+\newline
+I participated in the contest with a multithreaded version of the implemented paper, parallel with a few simpler but faster algorithms. I was able to reach the 2nd rank overall.
 \\
-The topic will be about writing an AI for an Agar\footnote{\url{http://agar.io/}}-like environment.
 \\
-The software is still under construction but runnable and can be viewed with the following links.
-\\
-Server (Handles middlewares and complete game logic):
+The complete source code is uploaded on my GitHub account:
+
 \begin{center}
-	\url{https://github.com/hpatjens/Programmierwettbewerb-Server}
-\end{center}$\\$
-Middleware (Manage bot in/output and connects to server):
-\begin{center}
-	\url{https://github.com/hpatjens/Programmierwettbewerb-Middleware}
-\end{center}$\\$
-Gui (Connects to server and visualizes the game with all connected bots)
-\begin{center}
-	\url{https://github.com/hpatjens/Programmierwettbewerb-Gui}
+	\url{https://github.com/MauriceGit/2D_Bin_Packing}
 \end{center}
 
+\subsection{Organisation of the Programming Contest 2016}\label{agar}
+
+The programming contest for the next semester is organized by a fellow student and myself. 
+The contest is a about a game similar to Agar.io\footnote{\url{http://agar.io/}}. All bots will play in real time against each other and will be challenged with different opponents, fields and situations.
+\newline
+All testing is done on a central server. Testers use our Middleware which handles all connections and data transfer to and from the server, making a participation very easy.
+\newline
+The programming contest has already started and is expected to run until the end of October. At this time there will be an event and the final contest.
+\newline
+All information, including a live view of playing bots, can be found under the following link. All information is in german as a courtesy for all participants.
+
+\begin{center}
+	\url{http://cagine.fh-wedel.de:8080/}
+\end{center} $ $
+\newline
+The complete source code can be found here:
+
+\begin{center}
+	\url{https://github.com/hpatjens/Programmierwettbewerb}
+\end{center}
+
+
 \section{Other Projects}
+
+\subsection{Joystick interface in C}
+
+I created a joystick interface for generic joysticks in C and implemented a sample program for the programming contest at section \ref{agar} - \glqq\nameref{agar}\grqq.
+\newline
+The live stream and all testing bots and programs can be viewed in 3D. For navigation an X-Box controller can be used. The interface should work with generic joysticks but is only tested with the X-Box controller.
+\\
+\\
+The complete source code is uploaded on my GitHub account:
+
+\begin{center}
+	\url{https://github.com/MauriceGit/Agar_Clone_Joystick_Client}
+\end{center}
 
 \subsection{Android App}
 
