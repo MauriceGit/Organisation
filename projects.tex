@@ -61,6 +61,7 @@
 \hyphenation{Autodesk}
 \hyphenation{Softimage}
 \hyphenation{different}
+\hyphenation{DevFest}
 
 % hier beginnt das Dokument
 \begin{document}
@@ -168,6 +169,10 @@ Several others I build in my private time.
 
 \newpage
 
+\section{Conference Talks}
+
+I gave a Technical Talk on the Google-Developer-Group Conference (GDG DevFest, October 2016) in Hamburg, Germany on my current research and Master Thesis subject:  \textit{\textbf{Illumination of density volumes with Neural Networks}}.
+
 \section{Computergraphics and Virtual Reality}
 
 \subsection{Basic Computergraphics Projects}
@@ -209,7 +214,7 @@ This project (including screenshots and further information) is uploaded on my G
 
 Implementation of a pressure based water simulation, internally represented as a height field.
 The surroundings are procedurally generated using a self implemented Perlin Noise.
-\\
+\newpage $ $\newline
 The reflections and refractions are entirely computed in screen space, using the OpenGL fragment
 shader.
 \\
@@ -351,11 +356,6 @@ The seminar paper is written in english and published on the website of the univ
 	\url{http://www.fh-wedel.de/~gb/seminare/ws2012/tollmien_backdoors.pdf}
 \end{center}
 
-\subsection{Security Engineering Project}
-
-Implementation of a small program in C and cracking/decompiling the implementation of a fellow student with use
-of common tools like hexdump, gdb and objdump.
-
 \subsection{Cryptography Project}
 
 Extended workshop on cryptographic methods and algorithms. The workshop covered the practical approach as well as
@@ -371,6 +371,8 @@ Every task and correspondent solution is uploaded on my GitHub account:
 \begin{center}
 	\url{https://github.com/MauriceGit/Cryptography_Workshop}
 \end{center}
+
+\newpage
 
 \subsection{Secure File Encryption}
 
@@ -397,7 +399,6 @@ The SRA implementation is published under the following link:
 	\url{https://github.com/timpauls/bc-java}
 \end{center}
 
-\newpage
 
 \section{Programming Contests}
 
@@ -419,6 +420,8 @@ The complete source code is uploaded on my GitHub account:
 \begin{center}
 	\url{https://github.com/MauriceGit/2048_Game_AI}
 \end{center}
+
+\newpage
 
 \subsection{SameGame AI - 2015}
 
@@ -454,9 +457,9 @@ The contest is a about a game similar to Agar.io\footnote{\url{http://agar.io/}}
 \newline
 All testing is done on a central server. Testers use our Middleware which handles all connections and data transfer to and from the server, making a participation very easy.
 \newline
-The programming contest has already started and is expected to run until the end of October. At this time there will be an event and the final contest.
+The programming contest has already started and is expected to run until the 9th November. At this time there will be an event and the final contest.
 \newline
-All information, including a live view of playing bots can be found under the following link. All information is in german as a courtesy for all participants.
+All information, including a live view of playing bots can be found under the following link. All information is in german as a courtesy for the participants.
 
 \begin{center}
 	\url{http://cagine.fh-wedel.de:8080/}
@@ -471,17 +474,16 @@ The complete source code can be found here:
 
 \section{Other Projects}
 
-\subsection{Joystick interface in C}
+\subsection{XBox controller interface in C}
 
-I created a joystick interface for generic joysticks in C and implemented a sample program for the programming contest at section \ref{agar} - \glqq\nameref{agar}\grqq.
-\newline
-The live stream and all testing bots and programs can be viewed in 3D. For navigation an X-Box controller can be used. The interface should work with generic joysticks but is only tested with the X-Box controller.
+I created a joystick interface for generic USB joysticks in C.
+Using this library makes it trivial to include and use a USB XBox controller in a C program. The interface methods are adapted to fit perfectly in an OpenGL environment for object or camera control.
 \\
 \\
 The complete source code is uploaded on my GitHub account:
 
 \begin{center}
-	\url{https://github.com/MauriceGit/Agar_Clone_Joystick_Client}
+	\url{https://github.com/MauriceGit/XBox_Controller_Linux_Interface}
 \end{center}
 
 \subsection{Android App}
